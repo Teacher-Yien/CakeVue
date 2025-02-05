@@ -1,0 +1,59 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Fetch Cake Data</title>  
+    <style>
+         img{
+            height: 250px;
+            width: 250px;
+         }
+    </style>
+</head>  
+<body>  
+    <h1>Cake Data</h1>  
+    <div id="cake-data"></div>  
+    
+
+    <script>  
+    
+        // AJAX Settings
+        const url = "http://localhost:3000/cake";
+        var GetData = {
+            "url": url,
+            "method": "GET",
+            "timeout": 0,
+            "headers": {
+                "Content-Type": "application/json"
+            },
+        };
+
+        // Fetch Data and Loop Through It
+        $.ajax(GetData).done(function (response) {
+            // Ensure response is an array
+            if (Array.isArray(response)) {
+                response.forEach(function (cake) {
+                    // Append each cake's details to the div
+                    $("#cake-data").append(`
+                        <div class="cake-item">
+                            <h2>${cake.name}</h2>
+                            <p>ID: ${cake.id}</p>
+                            <p>Gender: ${cake.gender}</p>
+                            <p><img  src="${cake.images}" alt=""> </p>
+                            <p>Salary: ${cake.salary}</p>
+                        </div>
+                        <hr>
+                    `);
+                });
+            } else {
+                $("#cake-data").text("No data available.");
+            }
+        }).fail(function (error) {
+            console.error("Error fetching data:", error);
+            $("#cake-data").text("Failed to load data.");
+        });
+    </script>  
+</body>  
+</html>
