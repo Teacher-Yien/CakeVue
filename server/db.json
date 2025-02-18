@@ -48,5 +48,50 @@
       "images": "https://mioamoreshop.com/cdn/shop/files/RedVelvet.png?v=1688806923&width=713",
       "price": 420.00
     }
+  ],
+  "specialcake":[
+    {
+      "id": 11,
+      "name": "Magical Alphabet",
+      "images": "https://mioamoreshop.com/cdn/shop/files/16_bb463c15-0672-4cce-b193-f3ba2868a6c3.png?v=1690377559&width=713",
+      "price": 1000.00
+    },
+    {
+      "id": 12,
+      "name": "Number Magic",
+      "images": "https://mioamoreshop.com/cdn/shop/files/Numeric_172.png?v=1688994787&width=713",
+      "price": 1000.00
+    },
+    {
+      "id": 13,
+      "name": "Ride of Joy",
+      "images": "https://mioamoreshop.com/cdn/shop/files/RideofJoy.png?v=1690377244&width=713",
+      "price": 1125.00
+    },
+    {
+      "id": 14,
+      "name": "Splish Splash",
+      "images": "https://mioamoreshop.com/cdn/shop/files/SplishSplash.png?v=1690380000&width=713",
+      "price": 1275.00
+    },
+    {
+      "id": 15,
+      "name": "Mighty Lion",
+      "images": "https://mioamoreshop.com/cdn/shop/files/1.png?v=1691491572&width=713",
+      "price": 1020.00
+    },
+    {
+      "id": 16,
+      "name": "Divine Indulgence",
+      "images": "https://mioamoreshop.com/cdn/shop/files/DivineIndulgence.png?v=1690376713&width=713",
+      "price": 1425.00
+    },
+    {
+      "id": 17,
+      "name": "Starry Starry Party",
+      "images": "https://mioamoreshop.com/cdn/shop/files/StarryStarryParty.png?v=1690377353&width=713",
+      "price": 2400.00
+    }    
+    
   ]
 }
