@@ -39,7 +39,7 @@ const fetchCakes = async () => {
 // Define the goToDetail function  
 const goToDetail = (id) => {  
   router.push({ name: 'cake-detail', params: { id } }); // Ensure this matches the router name  
-};  
+}; 
 
 onMounted(() => {  
   fetchCakes(); // Fetch cakes when the component mounts  
